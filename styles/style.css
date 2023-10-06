@@ -35,7 +35,10 @@ a{
 	display: flex;
 	flex-direction: column;
 	background: #FFF; 
-	padding-top:20px
+	border-radius: 5px;
+	padding-top:20px;
+	height:461px;
+		
 }
 .account_user-info{
 	display: flex;
@@ -102,14 +105,14 @@ line-height: 20px; /* 142.857% */
 
 .account_nav-list-item:hover{
 	border-left: solid #FC6E1D 2px;
-	border-radius: 5px;
+	
 	color: #FC6E1D;
 }
 .account_nav-list-item a:hover{
 	color: #FC6E1D;
 }
-.exit a:hover{
-	color: #FF3347;
+.account_nav-list-item.account_nav-list-item--exit a:hover{
+	color: #FF3347; 
 }
 .personal-account_inner{
 justify-content: center;
@@ -132,6 +135,7 @@ justify-content: center;
 	border-radius: 5px;
   background: #F6F6F6;
 	margin-top: 19px;
+	margin-bottom: 30px;
 }
 .personal-account_profile-title {
 	color: #1C294D;
@@ -165,3 +169,49 @@ justify-content: center;
 }
 
 /*форма*/
+.personal-account_profile_form{
+
+	max-width: 420px;
+}
+input{
+	font-size: 14px;
+}
+.personal-account_profile-input{
+	width: 100%;
+	border: solid 1px #DFE2E4;
+	border-radius: 5px;
+	padding: 15px;
+	margin-top: 5px;
+	outline:none;
+}
+.personal-account_profile_form-lable-number{
+	display: flex;
+	justify-content: space-between;
+	margin-top:15px;
+}
+ .personal-account_profile-input-phone{
+	
+	border: solid 1px #DFE2E4;
+	border-radius: 5px;
+	padding: 15px;
+	margin-top: 5px;
+	outline:none;
+	 width: 205px;
+}
+.personal-account_profile_form-text{
+	margin-top: 15px;/*!*/
+	color:#959EA4;
+font-family: Roboto,Sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+	 
+}
+.personal-account_profile-input:Focus{
+	border-color:#FC6E1D;
+}
+span{
+	color: #FF3347;
+ 
+}
