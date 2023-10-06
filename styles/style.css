@@ -209,6 +209,9 @@ input{
 	outline:none;
 	width: 205px;
 }
+ .personal-account_profile-input-phone:focus{
+  border: solid 1px #FC6E1D;
+}
 .personal-account_profile_form-text{
 	margin-top: 15px;/*!*/
 	color:#959EA4;
@@ -224,4 +227,35 @@ input{
 span{
 	color: #FF3347;
  
+}
+
+/*Дата Рождения*/
+.personal-account_profile_form-lable-date_text{
+	color:  #959EA4;
+	font-family: Roboto,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	margin-top: 15px;
+}
+.personal-account_profile_form-lable-date{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+.personal-account_profile_form-lable-date_day , .personal-account_profile_form-lable-date_month, .personal-account_profile_form-lable-date_year{
+
+	width: 120px;
+	background: none;
+  border-radius: 5px;
+	cursor:pointer;
+	border:solid 1px #DFE2E4;
+	padding: 15px 15px; 
+  
+}
+
+.personal-account_profile_form-lable-date_month{
+	width: 160px;
 }
