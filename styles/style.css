@@ -1,0 +1,167 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+.container{
+	max-width: 1160px;
+	margin: 0 auto;
+}
+body{
+	background: #F9F9FA; 
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #1C294D; 
+}
+.personal-account_title {
+	font-family: Roboto,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	color: #2A3D48;
+	margin-bottom: 30px;
+}
+.personal-account_inner{
+	display:flex;
+}
+.account_sidebar{
+	max-width: 360px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: #FFF; 
+	padding-top:20px
+}
+.account_user-info{
+	display: flex;
+	padding-left: 20px;
+}
+.account_user-info-box{
+	width: 320px;height: 60px;
+ background: #F9F9FA; 
+	padding:10px 0px 0px 60px;
+	margin-bottom: 15px;
+}
+.account_user-info-box::before{
+	content: '';
+	background-image: url('../images/simle.svg');
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 40px;
+	margin-top:7px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}
+.account_nav-list{
+	display: flex;
+	flex-direction: column;
+}
+.account_user-info .account-name{
+	color: #1C294D;
+font-family: Roboto,sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
+}
+.account_user-info .account-status{
+	color: rgba(28, 41, 77, 0.50);
+font-family: Roboto,sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+.account_nav-list-item{
+	width: 100%;
+	height: 60px;
+	padding-left: 20px;
+}
+.account_nav-list-item a{
+	display: inline-block;
+	width: 320px;
+	height: 60px;
+	color: #1C294D;
+	font-family: Roboto,sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 142.857% */
+	padding: 20px 0px 0px 20px;
+	border-top: solid gray  ;
+	border-width: 1px ;
+}
+
+.account_nav-list-item:hover{
+	border-left: solid #FC6E1D 2px;
+	border-radius: 5px;
+	color: #FC6E1D;
+}
+.account_nav-list-item a:hover{
+	color: #FC6E1D;
+}
+.exit a:hover{
+	color: #FF3347;
+}
+.personal-account_inner{
+justify-content: center;
+}
+
+/*Форма регистраций*/
+/*персонльные данные*/
+
+.personal-account_profile{
+	max-width: 750px;
+	width: 100%;
+	padding:45px;
+	border-radius: 5px;
+    background: #FFF;
+	margin-left: 30px;
+}
+.personal-account_profile_switch{
+	display: flex;
+	max-width:660px;
+	border-radius: 5px;
+  background: #F6F6F6;
+	margin-top: 19px;
+}
+.personal-account_profile-title {
+	color: #1C294D;
+	font-family: Roboto,sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 25px; /* 125% */
+}
+.personal-account_profile_switch-button{
+	/*
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;*/
+	padding:10px 15px ;
+	border-radius: 5px;
+	margin: 3px ;
+	cursor: pointer;
+}
+.personal-account_profile_switch-button p{
+	color: #1C294D;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px; /* 178.571% */
+}
+.personal-account_profile_switch-button:hover{
+	background: #fff;
+}
+
+/*форма*/
