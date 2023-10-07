@@ -187,15 +187,21 @@ input{
 	outline:none;
 	position:relative;
 }
+.personal-account_profile-input_decr{
+	background-position: right;
+	background-image:url('../images/pict.svg');
+	background-repeat: no-repeat;
+  background-position-x: 95%;
+}
+/*
 .personal-account_profile-input::after{
 	content:'';
 	position:absolute;
-	background-image: url('../images/smile.svg');
+	background-image: url('../images/simle.svg');
 	background-repeat:no-repeat;
 	width: 50px;
-	height: 50px;
-	
-}
+	height: 50px;	
+}*/
 .personal-account_profile_form-lable-number{
 	display: flex;
 	justify-content: space-between;
@@ -258,4 +264,95 @@ span{
 
 .personal-account_profile_form-lable-date_month{
 	width: 160px;
+}
+
+/*пол*/
+.personal-account_profile_form-lable_gender{
+	display: flex;
+}
+.personal-account_profile_form_lable_gender-button{
+	width: 130px;
+	height: 50px;
+	background: none;
+	border-radius: 5px;
+	border:solid 1px #DFE2E4;
+	cursor: pointer;
+	color: #1C294D;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+	position: relative;
+  
+	background-image: url("../images/pict.svg");
+	background-repeat: no-repeat;
+  background-position-x:85%;
+  background-position-y:50%;
+  padding-right:20px; 
+}
+.personal-account_profile_form_lable_gender-button{
+	width: 130px;
+	height: 50px;
+	background: none;
+	border-radius: 5px;
+	border:solid 1px #DFE2E4;
+	cursor: pointer;
+	color: #1C294D;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+	position: relative;
+  
+}
+.personal-account_profile_form_lable_gender-button--active{
+	width: 130px;
+	height: 50px;
+	background: none;
+	border-radius: 5px;
+	border:solid 1px #DFE2E4;
+	cursor: pointer;
+	color: #1C294D;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+	position: relative;
+  
+	background-image: url("../images/pict.svg");
+	background-repeat: no-repeat;
+  background-position-x:85%;
+  background-position-y:50%;
+  padding-right:20px; 
+	border:solid 1px #FF7A00;
+}
+
+.personal-account_profile_form_lable_gender-button:hover{
+
+	border:solid 1px #FF7A00;
+	color:#FF7A00;
+}
+.personal-account_profile_form_lable_gender-button+.personal-account_profile_form_lable_gender-button{
+	margin-left:10px;
+}
+
+/*Кнопка сохранения */
+
+.personal-account_profile_save-button{
+	background-color:#FF7A00;
+	border: solid 1px #FF7A00;
+	color:#fff;
+	border-radius: 5px;
+	width: 270px;
+  height: 50px; 
+	cursor: pointer;
+	margin-top:30px;
+	font-family: Roboto,sans-serif;
+	font-size:14px;
+	font-style: normal;
+	font-weight: 500;
+  line-height: 20px;
 }

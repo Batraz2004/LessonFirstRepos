@@ -40,28 +40,28 @@
 						<form action="" class="personal-account_profile_form" name="account_profile_form">
 							<p class="personal-account_profile_form-text">E-mail <span>*</span></p>
 
-							<input type="email" name="form_input" class="personal-account_profile-input" required value="mingalyovuxcheck@gmail.com">
+							<input type="email" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="mingalyovuxcheck@gmail.com">
 							<lable class="personal-account_profile_form-lable-number">
 								<div class="personal-account_profile_form-lable-number-block">
 									<p class="personal-account_profile_form-text">Номер телефона <span>*</span></p>
 									 <input type="tel" name="form_input"
-									 class="personal-account_profile-input-phone"required value="+7 910 832 26 28" >
+									 class="personal-account_profile-input-phone personal-account_profile-input_decr"required value="+7 910 832 26 28" >
 								</div>
 								<div class="personal-account_profile_form-lable-number-block">
 									<p class="personal-account_profile_form-text">Дополнительный номер</p>
 									 <input type="tel" name="form_input"
-									 class="personal-account_profile-input-phone">
+									 class="personal-account_profile-input-phone personal-account_profile-input_decr">
 								</div>
 							</lable>
 							<p class="personal-account_profile_form-text">Фамилия <span>*</span></p>
 
-							<input type="type" name="form_input" class="personal-account_profile-input" required value="Мингалёв">
+							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Мингалёв">
 							<p class="personal-account_profile_form-text">Имя <span>*</span></p>
 
-							<input type="type" name="form_input" class="personal-account_profile-input" required value="Михаил">
+							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михаил">
 							<p class="personal-account_profile_form-text">Отчество</p>
 
-							<input type="type" name="form_input" class="personal-account_profile-input" required value="Михайлович">
+							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михайлович">
 							<p class="personal-account_profile_form-lable-date_text">Дата рождения</p>
 							<label class="personal-account_profile_form-lable-date">
 							
@@ -152,13 +152,24 @@
 									</select>
 								</div>
 							</label>
-							<label class="personal-account_profile_form-lable_gender">
-								<button type="button"class="personal-account_profile_form_lable_gender-button"></button>
-							</label>
+							<p class="personal-account_profile_form-lable-date_text">Пол</p>
+							<div class="personal-account_profile_form-lable_gender">
+								<button type="button"class="personal-account_profile_form_lable_gender-button">
+									<p>Мужской</p>
+								</button>
+								<button type="button"class="personal-account_profile_form_lable_gender-button">
+									<p>Женский</p>
+								</button>
+							</div >
+							<button type="submit" class="personal-account_profile_save-button">
+								<p>Сохранить изменения</p>
+							</button>
 						</form>
 				</div>
 			</div>
 		</div>
 	</main>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="js/butscrpt.js"></script>
 </body>
 </html>
