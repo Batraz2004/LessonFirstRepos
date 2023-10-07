@@ -270,6 +270,7 @@ span{
 .personal-account_profile_form-lable_gender{
 	display: flex;
 }
+
 .personal-account_profile_form_lable_gender-button{
 	width: 130px;
 	height: 50px;
@@ -278,20 +279,14 @@ span{
 	border:solid 1px #DFE2E4;
 	cursor: pointer;
 	color: #1C294D;
-  font-family: Roboto,sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; 
-	position: relative;
-  
-	background-image: url("../images/pict.svg");
-	background-repeat: no-repeat;
-  background-position-x:85%;
-  background-position-y:50%;
-  padding-right:20px; 
+ 	font-family: Roboto,sans-serif;
+ 	font-size: 14px;
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	line-height: 20px; 
+	/*position: relative;*/
 }
-.personal-account_profile_form_lable_gender-button{
+.gender-man--active,.gender-woman--active{
 	width: 130px;
 	height: 50px;
 	background: none;
@@ -303,32 +298,16 @@ span{
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; 
+ 	line-height: 20px; 
 	position: relative;
-  
-}
-.personal-account_profile_form_lable_gender-button--active{
-	width: 130px;
-	height: 50px;
-	background: none;
-	border-radius: 5px;
-	border:solid 1px #DFE2E4;
-	cursor: pointer;
-	color: #1C294D;
-  font-family: Roboto,sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; 
-	position: relative;
-  
 	background-image: url("../images/pict.svg");
 	background-repeat: no-repeat;
-  background-position-x:85%;
+ 	background-position-x:85%;
   background-position-y:50%;
   padding-right:20px; 
 	border:solid 1px #FF7A00;
 }
+
 
 .personal-account_profile_form_lable_gender-button:hover{
 
