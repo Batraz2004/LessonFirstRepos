@@ -154,12 +154,17 @@
 							</label>
 							<p class="personal-account_profile_form-lable-date_text">Пол</p>
 							<div class="personal-account_profile_form-lable_gender">
-								<button type="button"class="personal-account_profile_form_lable_gender-button gender-man"name="button_gender">
-									<p>Мужской</p>
-								</button>
-								<button type="button"class="personal-account_profile_form_lable_gender-button gender-woman"name="button_gender">
-									<p>Женский</p>
-								</button>
+								<!--
+								<input type="radio"class="personal-account_profile_form_lable_gender-button gender-man"name="button_gender">
+								<input type="radio"class="personal-account_profile_form_lable_gender-button gender-woman"name="button_gender">-->
+								<label class="personal-account_profile_form_lable_gender-button gender-man">
+								  <input type="radio" name="button_gender" value="m">
+								  <p class="radio_text">мужской</p>
+								</label>
+								<label class="personal-account_profile_form_lable_gender-button gender-woman">
+								  <input type="radio" name="button_gender" value="f">
+								  <p class="radio_text">женский</p>
+								</label>
 							</div >
 							<button type="submit" class="personal-account_profile_save-button">
 								<p>Сохранить изменения</p>
@@ -169,7 +174,9 @@
 			</div>
 		</div>
 	</main>
+	<!--
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 	<script src="js/butscrpt.js"></script>
+	-->
 </body>
 </html>
