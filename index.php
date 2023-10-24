@@ -1,3 +1,11 @@
+<?php
+if($_POST['day']=='1')
+{
+	//header('location: sendEmail.php');
+	//exit();
+	$to='';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +45,7 @@
 						<div class="personal-account_profile_switch-button"><p>Адреса доставки</p></div>
 						<div class="personal-account_profile_switch-button"><p>Пароль</p></div>
 					</div>
-						<form action="" class="personal-account_profile_form" name="account_profile_form">
+						<form action="" class="personal-account_profile_form" name="account_profile_form" method="post">
 							<p class="personal-account_profile_form-text">E-mail <span>*</span></p>
 
 							<input type="email" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="mingalyovuxcheck@gmail.com">
@@ -45,7 +53,7 @@
 								<div class="personal-account_profile_form-lable-number-block">
 									<p class="personal-account_profile_form-text">Номер телефона <span>*</span></p>
 									 <input type="tel" name="form_input"
-									 class="personal-account_profile-input-phone personal-account_profile-input_decr"required value="+7 910 832 26 28" >
+									 class="personal-account_profile-input-phone personal-account_profile-input_decr"required value="+7 910 832 26 28" required>
 								</div>
 								<div class="personal-account_profile_form-lable-number-block">
 									<p class="personal-account_profile_form-text">Дополнительный номер</p>
@@ -55,16 +63,15 @@
 							</lable>
 							<p class="personal-account_profile_form-text">Фамилия <span>*</span></p>
 
-							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Мингалёв">
+							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Мингалёв" required>
 							<p class="personal-account_profile_form-text">Имя <span>*</span></p>
 
-							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михаил">
+							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михаил" required>
 							<p class="personal-account_profile_form-text">Отчество</p>
 
-							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михайлович">
+							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михайлович" required>
 							<p class="personal-account_profile_form-lable-date_text">Дата рождения</p>
 							<label class="personal-account_profile_form-lable-date">
-							
 							<div class="personal-account_profile_form-lable-date_box">
 									<select name="day" id="" class="personal-account_profile_form-lable-date_day">
 										<option value="1">1</option>
