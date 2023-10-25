@@ -1,13 +1,6 @@
-<?php
-if($_POST['day']=='1')
-{
-	//header('location: sendEmail.php');
-	//exit();
-	$to='';
-}
-?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +41,8 @@ if($_POST['day']=='1')
 						<form action="" class="personal-account_profile_form" name="account_profile_form" method="post">
 							<p class="personal-account_profile_form-text">E-mail <span>*</span></p>
 
-							<input type="email" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="mingalyovuxcheck@gmail.com">
+							<input type="email" name="form_input-Email" class="personal-account_profile-input personal-account_profile-input_decr" required value="mingalyovuxcheck@gmail.com">
+							<p class="message_email"><?php $messageEmail ?></p>
 							<lable class="personal-account_profile_form-lable-number">
 								<div class="personal-account_profile_form-lable-number-block">
 									<p class="personal-account_profile_form-text">Номер телефона <span>*</span></p>
@@ -63,13 +57,16 @@ if($_POST['day']=='1')
 							</lable>
 							<p class="personal-account_profile_form-text">Фамилия <span>*</span></p>
 
-							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Мингалёв" required>
+							<input type="text" name="form_input-second-name" class="personal-account_profile-input personal-account_profile-input_decr" required value="Мингалёв" required>
+							<p class="message message_second-name"><?php echo $messageSecondName ?></p>
 							<p class="personal-account_profile_form-text">Имя <span>*</span></p>
 
-							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михаил" required>
+							<input type="text" name="form_input-name" class="personal-account_profile-input personal-account_profile-input_decr"  value="">
+							<!--<p class="message message_name"></p>-->
+							<p class="message message_name"><?php echo $messageName ?></p>
 							<p class="personal-account_profile_form-text">Отчество</p>
-
-							<input type="type" name="form_input" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михайлович" required>
+							<input type="text" name="form_input-last-name" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михайлович" required>
+							<p class="message message_last-name"><?php echo $messageLastName ?></p>
 							<p class="personal-account_profile_form-lable-date_text">Дата рождения</p>
 							<label class="personal-account_profile_form-lable-date">
 							<div class="personal-account_profile_form-lable-date_box">
@@ -181,9 +178,24 @@ if($_POST['day']=='1')
 			</div>
 		</div>
 	</main>
-	<!--
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-	<script src="js/butscrpt.js"></script>
-	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	 <script src="js/butscrpt.js">
+	 	echo "f";
+	 	$.ajax({
+    url: "php/form.php",
+    method: "POST",
+    data: {'title':$("#title").val(), 'text_area':$("#text_area").val() },
+    complete: function() {},
+    statusCode: {
+        200: function(message) {
+            alert(message);
+        },
+        403: function(jqXHR) {
+            var error = JSON.parse(jqXHR.responseText);
+            $("body").prepend(error.message);
+    }
+});
+	 </script>
+
 </body>
 </html>
