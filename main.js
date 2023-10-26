@@ -69,6 +69,18 @@ $(document).ready(function() {
     }
 
     //ajax запрос:
+      $.ajax({
+    url: 'form.php',
+    type: 'POST',
+    data: $(this).serialize(),
+    dataType: 'html',
+    success: function(response) {
+      $('#result').html(response);
+    },
+    error: function(error){
+      $('#result').html(error);
+    }
+    });
     /*
     $.ajax({
       type: "POST",

@@ -55,17 +55,16 @@
 									 class="personal-account_profile-input-phone personal-account_profile-input_decr">
 								</div>
 								<span id="result__phone"></span>
-								
 							</lable>
 							<p class="personal-account_profile_form-text">Фамилия <span>*</span></p>
-
 							<input type="text" name="form_input-second-name" class="personal-account_profile-input personal-account_profile-input_decr" value="Мингалёв" ><span id="result__second-name"></span>
 							<p class="message message_second-name"><?php echo $messageSecondName ?></p>
-							<p class="personal-account_profile_form-text">Имя <span>*</span></p>
 
+							<p class="personal-account_profile_form-text">Имя <span>*</span></p>
 							<input type="text" name="form_input-name" class="personal-account_profile-input personal-account_profile-input_decr"  value="Михаил"> <span id="result__name"></span>
 							<!--<p class="message message_name"></p>-->
 							<p class="message message_name"><?php echo $messageName ?></p>
+
 							<p class="personal-account_profile_form-text">Отчество</p>
 							<input type="text" name="form_input-last-name" class="personal-account_profile-input personal-account_profile-input_decr" value="Михайлович" ><span id="result__last-name"></span>
 							<p class="message message_last-name"><?php echo $messageLastName ?></p>
