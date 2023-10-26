@@ -4,7 +4,7 @@
 $isvalid=false;
 $patternPhone='/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/';//для номера телефона
 $patternName = '/^[А-Я][а-я]*$/';//для проверки корректности имени
-echo "какой-то текст" ;
+
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
 	$userName=$_POST['form_input-name'];

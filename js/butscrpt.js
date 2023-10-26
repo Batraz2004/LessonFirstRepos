@@ -1,4 +1,4 @@
-
+/*
 $('.personal-account_profile_form').submit(function(e)
 	{
 		alert("какой-то текст" );
@@ -26,9 +26,8 @@ $('.personal-account_profile_form').submit(function(e)
 			$('#result').html(error);
 		}
 	});
+*/
 
-//пример
-/*
 $(function(){
    	//let name=$()
 	$.ajax({

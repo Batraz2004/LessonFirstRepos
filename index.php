@@ -41,31 +41,33 @@
 						<form action="" class="personal-account_profile_form" name="account_profile_form" method="post">
 							<p class="personal-account_profile_form-text">E-mail <span>*</span></p>
 
-							<input type="email" name="form_input-Email" class="personal-account_profile-input personal-account_profile-input_decr" required value="mingalyovuxcheck@gmail.com">
+							<input type="email" name="form_input-Email" class="personal-account_profile-input personal-account_profile-input_decr"  value="mingalyovuxcheck@gmail.com"><span id="result__email"></span>
 							<p class="message_email"><?php $messageEmail ?></p>
 							<lable class="personal-account_profile_form-lable-number">
 								<div class="personal-account_profile_form-lable-number-block">
 									<p class="personal-account_profile_form-text">Номер телефона <span>*</span></p>
-									 <input type="tel" name="form_input"
-									 class="personal-account_profile-input-phone personal-account_profile-input_decr"required value="+7 910 832 26 28" required>
+									 <input type="tel" name="form_input-phone"
+									 class="personal-account_profile-input-phone personal-account_profile-input_decr" value="+7 910 832 26 28" >
 								</div>
 								<div class="personal-account_profile_form-lable-number-block">
 									<p class="personal-account_profile_form-text">Дополнительный номер</p>
-									 <input type="tel" name="form_input"
+									 <input type="tel" name="form_input-anotherPhone"
 									 class="personal-account_profile-input-phone personal-account_profile-input_decr">
 								</div>
+								<span id="result__phone"></span>
+								
 							</lable>
 							<p class="personal-account_profile_form-text">Фамилия <span>*</span></p>
 
-							<input type="text" name="form_input-second-name" class="personal-account_profile-input personal-account_profile-input_decr" required value="Мингалёв" required>
+							<input type="text" name="form_input-second-name" class="personal-account_profile-input personal-account_profile-input_decr" value="Мингалёв" ><span id="result__second-name"></span>
 							<p class="message message_second-name"><?php echo $messageSecondName ?></p>
 							<p class="personal-account_profile_form-text">Имя <span>*</span></p>
 
-							<input type="text" name="form_input-name" class="personal-account_profile-input personal-account_profile-input_decr"  value="">
+							<input type="text" name="form_input-name" class="personal-account_profile-input personal-account_profile-input_decr"  value="Михаил"> <span id="result__name"></span>
 							<!--<p class="message message_name"></p>-->
 							<p class="message message_name"><?php echo $messageName ?></p>
 							<p class="personal-account_profile_form-text">Отчество</p>
-							<input type="text" name="form_input-last-name" class="personal-account_profile-input personal-account_profile-input_decr" required value="Михайлович" required>
+							<input type="text" name="form_input-last-name" class="personal-account_profile-input personal-account_profile-input_decr" value="Михайлович" ><span id="result__last-name"></span>
 							<p class="message message_last-name"><?php echo $messageLastName ?></p>
 							<p class="personal-account_profile_form-lable-date_text">Дата рождения</p>
 							<label class="personal-account_profile_form-lable-date">
@@ -174,28 +176,13 @@
 								<p>Сохранить изменения</p>
 							</button>
 						</form>
+						<div id="result"></div>
 				</div>
 			</div>
 		</div>
 	</main>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-	 <script src="js/butscrpt.js">
-	 	echo "f";
-	 	$.ajax({
-    url: "php/form.php",
-    method: "POST",
-    data: {'title':$("#title").val(), 'text_area':$("#text_area").val() },
-    complete: function() {},
-    statusCode: {
-        200: function(message) {
-            alert(message);
-        },
-        403: function(jqXHR) {
-            var error = JSON.parse(jqXHR.responseText);
-            $("body").prepend(error.message);
-    }
-});
-	 </script>
+	<script src="main.js"></script>
 
 </body>
 </html>
