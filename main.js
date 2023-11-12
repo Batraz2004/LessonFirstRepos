@@ -4,8 +4,8 @@ $(document).ready(function() {
   $('.personal-account_profile_form').submit(function(e) { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
   // alert("fff");
    e.preventDefault();
-     $('#result').addClass('active');
-    // Получение данных из формы
+     $('#result').addClass('active');//# - обращение по id
+    // Получение данных из формы (пример обращение по атрибуту name)
     let name = document.querySelector('input[name="form_input-name"]');
     let secondName = document.querySelector('input[name="form_input-second-name"]');
     let lastName = document.querySelector('input[name="form_input-last-name"]');
